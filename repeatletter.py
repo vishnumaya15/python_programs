@@ -14,3 +14,28 @@ def repeat_string(s):
 
     
 print(repeat_string("pppouoeiwuyrrrrrrr"))
+
+word = input("enter the word")
+count_l = {}
+
+for char in word:
+    if char in count_l:
+        count_l[char] += 1
+        
+    else:
+        count_l[char] = 1
+        
+print(count_l)
+
+
+print('-----------------------------------')
+
+
+s='banananana'
+count={}
+for char in s:
+    if char in count:
+        count[char]+=1
+    else:
+        count[char]=1
+print("COUNT",count)
