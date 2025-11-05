@@ -13,3 +13,5 @@ print ("Reverse",reversed)
 
 test1="Vishnu"
 print(test1[0]+test1[1:-1][::-1]+test1[-1])
+
+print(" ".join(test.split()[::-1]))
