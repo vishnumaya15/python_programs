@@ -73,4 +73,9 @@ dog.speak()
 cat.speak()
 
 
+from collections import Counter
+counts = Counter(word)
+print(counts)
+
+
 
