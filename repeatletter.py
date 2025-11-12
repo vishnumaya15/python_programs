@@ -11,6 +11,11 @@ def repeat_string(s):
 
     min_char = min(count,key=count.get)
     print(min_char,"Count:", count[min_char])
+    for ch,freq in count.items():
+        if freq>2:
+            print(ch,freq)
+    more_tahn_two={ch:freq for ch,freq in count.items() if freq>2}
+    return more_tahn_two
 
     
 print(repeat_string("pppouoeiwuyrrrrrrr"))
@@ -29,6 +34,19 @@ print(count_l)
 
 
 print('-----------------------------------')
+
+# def repeat_more_than_two(s):
+#     s = s.replace(" ", "").lower()
+#     count = {}
+#     for ch in s:
+#         count[ch] = count.get(ch, 0) + 1
+
+#     for ch, freq in count.items():
+#         if freq > 2:
+#             print(ch, freq)
+
+# repeat_more_than_two("I am a developer")
+
 
 class Animal:
     def speak(self):

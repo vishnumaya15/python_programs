@@ -10,6 +10,8 @@ for num in arr:
 print(secondnum)
 
 arr.sort()
+print(arr)
+print(sorted(arr,reverse=True))
 print(arr[-2])
 print(sorted(arr)[-2])
 print(sorted(set(arr))[-2])
