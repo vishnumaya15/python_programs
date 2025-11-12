@@ -1,12 +1,12 @@
-# rows= int(input("Rows"))
-# columns=int(input("Columns"))
+rows= int(input("Rows"))
+columns=int(input("Columns"))
 
-# for i in range (rows):
-#     print(list("1"*columns))
+for i in range (rows):
+    print(("1"*columns))
 
 
-# matrix = [list('1' * columns) for _ in range(rows)]
-# print(matrix)
+matrix = [list('1' * columns) for _ in range(rows)]
+print(matrix)
 
 
 class Car:

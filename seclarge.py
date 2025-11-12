@@ -16,3 +16,4 @@ print(sorted(set(arr))[-2])
 
 arr.remove(max(arr))
 print(max(arr))
+

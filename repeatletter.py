@@ -31,4 +31,9 @@ print(count_l)
 print('-----------------------------------')
 
 
+from collections import Counter
+counts = Counter(word)
+print(counts)
+
+
 
