@@ -30,6 +30,30 @@ print(count_l)
 
 print('-----------------------------------')
 
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def speak(self):  # Overriding the speak method
+        print("Dog barks")
+
+class Cat(Animal):
+    def speak(self):  # Overriding the speak method
+        # Calling the superclass method before adding specific behavior
+        super().speak()
+        print("Cat meows")
+
+# Create objects
+animal = Animal()
+dog = Dog()
+cat = Cat()
+
+# Call the speak method on different objects
+animal.speak()
+dog.speak()
+cat.speak()
+
 
 from collections import Counter
 counts = Counter(word)

@@ -4,3 +4,6 @@ print(count_vowel('LKJHGFHGFDSAQeio'))
 
 double = lambda x: x * 2
 print(double(2))
+
+str = '''I'm "Vishnumaya"'''
+print(str)
