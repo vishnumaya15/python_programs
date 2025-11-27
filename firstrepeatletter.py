@@ -15,7 +15,7 @@ def first_non_repeat(s):
         if s.count(letter)==1:
             return letter
     return None
-print(first_non_repeat("pppwwweeoool"))
+print(first_non_repeat("pppwwweeooolkm"))
 
 
 
