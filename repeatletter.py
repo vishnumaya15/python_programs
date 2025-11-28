@@ -14,6 +14,12 @@ def repeat_string(s):
     for ch, freq in count.items():
         if freq > 2:
             print(ch, freq)
+    for ch,freq in count.items():
+        if freq>2:
+            print(ch,freq)
+    more_tahn_two={ch:freq for ch,freq in count.items() if freq>2}
+    return more_tahn_two
+
     
 print(repeat_string("pppouoeiwuyrrrrrrr"))
 
@@ -71,6 +77,18 @@ value = my_dict['a']
 # Method 2: Safe access (returns None or default if not found)
 value = my_dict.get('a')           # returns 1
 value = my_dict.get('z', 'NotFound')  # returns 'NotFound'
+# def repeat_more_than_two(s):
+#     s = s.replace(" ", "").lower()
+#     count = {}
+#     for ch in s:
+#         count[ch] = count.get(ch, 0) + 1
+
+#     for ch, freq in count.items():
+#         if freq > 2:
+#             print(ch, freq)
+
+# repeat_more_than_two("I am a developer")
+
 
 class Animal:
     def speak(self):

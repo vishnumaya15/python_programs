@@ -8,22 +8,22 @@ def fibonacci(n):
 
 print(fibonacci(10))
 
-# def fibonacci_iterative(n):
-#     a, b = 0, 1
-#     if n <= 0:
-#         print("Please enter a positive integer.")
-#     elif n == 1:
-#         print(a)
-#     else:
-#         print(a, end=" ")
-#         print(b, end=" ")
-#         for _ in range(2, n):
-#             next_fib = a + b
-#             print(next_fib, end=" ")
-#             a = b
-#             b = next_fib
+def fibonacci_iterative(n):
+    a, b = 0, 1
+    if n <= 0:
+        print("Please enter a positive integer.")
+    elif n == 1:
+        print(a)
+    else:
+        print(a, end=" ")
+        print(b, end=" ")
+        for _ in range(2, n):
+            next_fib = a + b
+            print(next_fib, end=" ")
+            a = b
+            b = next_fib
 
-# fibonacci_iterative(10)
+fibonacci_iterative(10)
 
 def fibonacci_iterative(n):
     a, b = 0, 1
@@ -33,19 +33,19 @@ def fibonacci_iterative(n):
 
 fibonacci_iterative(10)
 
-# def fibonacci_recursive(n):
-#     for i in range(num_terms):
-#         if n <= 1:
-#             return n
-#         else:
-#             return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
+def fibonacci_recursive(n):
+    for i in range(num_terms):
+        if n <= 1:
+            return n
+        else:
+            return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
 
-# num_terms = 20
-# if num_terms <= 0:
-#     print("Please enter a positive integer.")
-# else:
-#     for i in range(num_terms):
-#         print(fibonacci_recursive(i), end=" ")
+num_terms = 20
+if num_terms <= 0:
+    print("Please enter a positive integer.")
+else:
+    for i in range(num_terms):
+        print(fibonacci_recursive(i), end=" ")
 
 def fibb(n):
     a,b=0,1
