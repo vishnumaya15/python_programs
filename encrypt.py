@@ -5,7 +5,7 @@ def encrypt_String(s):
         if i<len(s) and s[i] == s[i-1]:
             count+=1
         else:
-            result+=s[i-1] + (str(count) if count>1 else "")#str(count) becuase we can't add str+int
+            result+=s[i-1] + (str(count) if count>1 else "")  #str(count) becuase we can't add str+int
             count=1
     return result
 print(encrypt_String('pppoooiiuuyyttrr'))
@@ -18,3 +18,4 @@ for i in range(1, len(s)):
 # i is character
 for i in s:
     print(i)  # only the character, no access to previous directly
+

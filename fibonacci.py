@@ -1,12 +1,12 @@
-# def fibonacci(n):
-#     if n <= 1:
-#         return n
-#     # elif n == 1:
-#     #     return 1
-#     else:
-#         return fibonacci(n-1) + fibonacci(n-2)
+def fibonacci(n):
+    if n <= 1:
+        return n
+    # elif n == 1:
+    #     return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
 
-# print(fibonacci(10))
+print(fibonacci(10))
 
 # def fibonacci_iterative(n):
 #     a, b = 0, 1
@@ -63,3 +63,11 @@ def fibbo(n):
     return result
 
 print(fibbo(10))
+
+def fiba(n):
+    if n<=1:
+        return n
+    else:
+        return fiba(n-1)+fiba(n-2)
+print("lll",fiba(10))
+    
